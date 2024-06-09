@@ -1,0 +1,40 @@
+$color_link_button: #2D9AFF;
+$color_create_button: #00AD45;
+$color_function_button: #595959;
+$color_delete_button: #FF6262;
+$color_unactive: #9B9D9E;
+
+.basic-button{
+    transition: 0.2s ease all;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin for_button ($bg-color, $bg-hover){
+    background-color: $bg-color;
+    &:hover{
+        background-color: $bg-hover;
+    }
+}
+
+.link-button{
+    @include for_button($color_link_button, #9B9D9E);
+}
+
+.create-button{
+    @include for_button($color_create_button, #005422);
+}
+
+.function-button{
+    @include for_button($color_function_button, #BDBDBD);
+}
+
+.delete-button{
+    @include for_button($color_delete_button, #ff8a8a);
+}

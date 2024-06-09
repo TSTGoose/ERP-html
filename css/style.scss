@@ -1,0 +1,78 @@
+@import "nullable";
+@import "buttons";
+
+$color-main-text: #333333;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: $color-main-text;
+}
+
+// Служебный класс, ограничение контейнера по ширине
+._container{
+    max-width: 1298px;
+    margin: 0 auto;
+}
+
+// Заголовок страницы
+.page-header{
+    margin-bottom: 32px;
+    .header-unactive{
+        color: #BBBBBB;
+    }
+}
+// Текст всех заголовков
+.header-text{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.attestation-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.25);
+    padding: 32px;
+
+    .section-header{
+        hr{
+            border: 1px solid #6c6c6c;
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+        .section-header__wrapper{
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .section-header-text { 
+                font-weight: 400;
+                font-size: 18px;
+                color: #555;
+            }
+            .buttons-wrap{
+                display: flex;
+                gap: 16px;
+            }
+        }
+    }
+
+    .section-content{
+        .section-content__element{
+            border: 1px solid #e8e8e8;
+            border-radius: 15px;
+            padding: 24px;
+            background-color: #fff;
+            .element__header{
+                margin-bottom: 8px;
+            }
+            .element__content{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    }
+}
