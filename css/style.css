@@ -43,7 +43,8 @@ ul, ol, li, a {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #333333; }
+  color: #333333;
+  min-width: 320px; }
 
 ._container {
   max-width: 1298px;
@@ -53,6 +54,10 @@ body {
   margin-bottom: 32px; }
   .page-header .header-unactive {
     color: #BBBBBB; }
+  @media screen and (max-width: 640px) {
+    .page-header {
+      text-align: center;
+      font-size: 24px; } }
 
 .header-text {
   text-transform: uppercase;
@@ -81,6 +86,9 @@ body {
     .attestation-container .section-header .section-header__wrapper .buttons-wrap {
       display: flex;
       gap: 16px; }
+      @media screen and (max-width: 768px) {
+        .attestation-container .section-header .section-header__wrapper .buttons-wrap {
+          display: none; } }
   .attestation-container .section-content .section-content__element {
     border: 1px solid #e8e8e8;
     border-radius: 15px;
