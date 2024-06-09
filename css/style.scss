@@ -7,6 +7,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: $color-main-text;
+    min-width: 320px;
 }
 
 // Служебный класс, ограничение контейнера по ширине
@@ -15,11 +16,25 @@ body{
     margin: 0 auto;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.decipline-status{
+    align-self: flex-end;
+}
+
 // Заголовок страницы
 .page-header{
-    margin-bottom: 32px;
     .header-unactive{
         color: #BBBBBB;
+    }
+
+    @media screen and (max-width: 640px){
+        text-align: center;
+        font-size: 24px;
     }
 }
 // Текст всех заголовков
@@ -47,6 +62,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             .section-header-text { 
                 font-weight: 400;
                 font-size: 18px;
@@ -55,24 +71,42 @@ body{
             .buttons-wrap{
                 display: flex;
                 gap: 16px;
+
+                @media screen and (max-width: 768px){
+                    display: none;
+                }
             }
         }
     }
 
     .section-content{
         .section-content__element{
-            border: 1px solid #e8e8e8;
-            border-radius: 15px;
-            padding: 24px;
-            background-color: #fff;
             .element__header{
                 margin-bottom: 8px;
             }
-            .element__content{
+            .content-wrapper{
                 display: flex;
-                flex-direction: column;
-                gap: 8px;
+                gap: 32px;
+                .element__descriptions{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    font-size: 12px;
+                    max-width: 470px;
+                    .element-header{
+                        font-size: 16px;
+                    }
+                }
+
+                .element__content{
+                    display: flex;
+                    flex: 1 1 100%;
+                    max-width: 730px;
+                    flex-direction: column;
+                    gap: 8px;
+                }
             }
+
         }
     }
 }
