@@ -9,19 +9,12 @@
 <body>
     <main class="content">
         <div class="_container wrapper">
-            <h1 class="page-header header-text"><span class="header-unactive">Ведомости / Д-273 / </span>Предмет</h1>
-            <div class="decipline-status">
-                <span class="status-header">Статус:</span> <span id="status">Неактивный</span> <button id="change-status" class="basic-button function-button">Изменить</button>
-            </div>
+            <h1 class="page-header header-text"><span class="header-unactive">Ведомости / Д-273 / Предмет / </span>Создание аттестации</h1>
             <section class="attestation-descipline attestation-container">
                 <!-- Шапка блока с контентом -->
                 <div class="section-header">
                     <div class="section-header__wrapper">
-                        <h4 class="section-header-text">Просмотр ведомостей</h4>
-                        <div class="buttons-wrap">
-                            <button class="function-button basic-button">Создать ведомость</button>
-                            <button class="create-button basic-button">Создать аттестацию</button>
-                        </div>
+                        <h4 class="section-header-text">Создание аттестации</h4>
                     </div>
                     <hr class="section-header-line">
                 </div>
@@ -30,25 +23,46 @@
                     <div class="section-content__element">
                         <div class="content-wrapper">
                             <div class="element__content">
-                                <a href="" class="link-button basic-button">ПРЕДМЕТ</a>
-                                <a href="" class="link-button basic-button">ПРЕДМЕТ</a>
-                                <a href="" class="link-button basic-button">ПРЕДМЕТ</a>
-                                <a href="" class="link-button basic-button">ПРЕДМЕТ</a>
-                                <a href="" class="link-button basic-button">ПРЕДМЕТ</a>
-                                <a href="" class="link-button basic-button">ПРЕДМЕТ</a>
-                            </div>
-                            <div class="element__descriptions">
-                                <h3 class="element-header header-text">Доп. информация о компетенциях:</h3>
-                                <div class="descriptions__description">
-                                    <span class="description-header element-header">ОПК-1</span>
-                                    <p class="description-text">
-                                        Способен использовать математические, естественнонаучные и инженерные знания для решения задач своей профессиональной деятельности
-
-<br><br>З-ОПК-1 - Знать: математический аппарат, физические и химические законы необходимые для решения профессиональных задач в области химии и технологии ядерного топливного цикла, основные теоретические положения смежных естественнонаучных дисциплин
-<br><br>У-ОПК-1 - Уметь: определять необходимость привлечения дополнительных знаний из специальных разделов математических и естественнонаучных дисциплин для решения профессиональных задач, применять полученные теоретические знания и математический аппарат для самостоятельного освоения специальных разделов математики и естественнонаучных дисциплин, необходимых в профессиональной деятельности, применять знания математики и естественнонаучных дисциплин для анализа и обработки результатов химических экспериментов
-<br><br>В-ОПК-1 - Владеть: навыками использования теоретических основ базовых разделов математики и естественнонаучных дисциплин при решении задач в области химии и технологии ядерного топливного цикла
-                                    </p>
-                                </div>
+                                <form action="" method="POST" class="create-attestation">
+                                    <div class="inputs-container">
+                                        
+                                        <div class="inputs-wrapper">
+                                            <div class="form-input">
+                                                <label for="period" class="input-header">Номер периода</label>
+                                                <input type="date" class="input" id="period" name="period">
+                                            </div>
+                                            <div class="form-input">
+                                                <label for="" class="input-header">Предмет</label>
+                                                <input type="text" class="input">
+                                            </div>
+                                            <div class="form-input">
+                                                <label for="" class="input-header">Название отчётности</label>
+                                                <input type="text" class="input">
+                                            </div>
+                                            <div class="form-input">
+                                                <label for="" class="input-header">Номер отчётности</label>
+                                                <input type="text" class="input">
+                                            </div>
+                                            <div class="form-input">
+                                                <label for="" class="input-header">Max points</label>
+                                                <input type="text" class="input">
+                                            </div>
+                                            <div class="form-input">
+                                                <label for="" class="input-header">Min points</label>
+                                                <input type="text" class="input">
+                                            </div>
+                                            <div class="form-input">
+                                                <label for="" class="input-header">Дата проведения аттестации</label>
+                                                <input type="text" class="input">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-container">
+                                            <input type="checkbox">
+                                            <label for="">Является ли отчётность результирующей</label>
+                                        </div>
+                                        <button class="basic-button create-button">Создать</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
