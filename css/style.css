@@ -15,7 +15,7 @@ ul, ol, li, a {
   text-align: center;
   padding: 8px 16px;
   border: none;
-  font-weight: bold;
+  font-weight: bold !important;
   text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer; }
@@ -125,6 +125,8 @@ body {
       width: 100%; }
       .attestation-container .create-attestation .inputs-wrapper .form-input .input-header {
         font-weight: 700;
+        margin-bottom: 8px;
+        color: #333333;
         display: block; }
       .attestation-container .create-attestation .inputs-wrapper .form-input .input {
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
